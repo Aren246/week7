@@ -1,0 +1,276 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #f7fafc;
+}
+
+header {
+  background: linear-gradient(135deg, #ff8c42 0%, #fd7e14 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #ff8c42;
+  transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 140, 66, 0.15);
+  border-left-color: #fd7e14;
+}
+
+.recipe-card h3 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ff8c42;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.recipe-card p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #718096;
+}
+
+.recipe-card strong {
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto;
+  border-top: 4px solid #ff8c42;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #4a5568;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ff8c42;
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
+}
+
+.form-control::placeholder {
+  color: #a0aec0;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff8c42 0%, #fd7e14 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 140, 66, 0.4);
+  background: linear-gradient(135deg, #fd7e14 0%, #ea6100 100%);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  background: #a0aec0;
+}
+
+/* Loading and empty states */
+.loading, .empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+}
+
+.loading {
+  font-size: 1.1rem;
+}
+
+.empty-state {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #ff8c42;
+}
+
+.empty-state h2 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.empty-state p {
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+h1 {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.accent-border {
+  border-left: 4px solid #ff8c42;
+}
+
+.text-orange {
+  color: #ff8c42;
+}
+
+.text-grey {
+  color: #718096;
+}
+
+.bg-orange {
+  background-color: #ff8c42;
+}
+
+.bg-grey {
+  background-color: #f7fafc;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  nav a {
+    text-align: center;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+  
+  .recipe-card {
+    padding: 1rem;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f7fafc 0%, #edf2f7 100%);
+}
+
+
+*:focus {
+  outline: 2px solid #ff8c42;
+  outline-offset: 2px;
+}
