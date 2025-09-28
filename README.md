@@ -1,4 +1,6 @@
-Reflection on Full-Stack Development Challenges
+Reflection on Full-Stack Development 
+
+Challenges
 This project highlighted the reality that full-stack development involves juggling multiple moving pieces, and time constraints can significantly impact problem-solving capacity. While my understanding of React concepts like component structure, state management, and routing proved solid, the backend integration presented unexpected hurdles that consumed more time than anticipated.
 What I Successfully Accomplished:
 Despite the challenges, I completed substantial portions of a full-stack application that demonstrated strong technical understanding:
